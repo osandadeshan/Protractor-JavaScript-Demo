@@ -34,14 +34,14 @@ The protractor is an end to end testing framework for Angular JS based applicati
 
    2. Check the installation and version using `Protractor --version`. If successful it will show the version.
 
-     (Steps 3 and 4 are Optional but recommended for better practice)
+   (Steps 3 and 4 are Optional but recommended for better practice)
 
    3. Update the Web driver manager. The web driver manager is used for running the tests against the angular web application in a specific browser. After Protractor is installed, the web driver manager needs to be updated to the latest version. This can be done by running the following command in the command prompt.\
    `webdriver-manager update`
 
    4. Start the web driver manager. This step will run the web driver manager in the background and will listen to any tests which run via protractor.
 
-   Once Protractor is used to run any test, the web driver will automatically load and run the test in the relevant browser. To start the web driver manager, the following command needs to be executed from the command prompt.\
+   Once Protractor is used to run any test, the web driver will automatically load and run the test in the relevant browser. To start  the web driver manager, the following command needs to be executed from the command prompt.\
    `webdriver-manager start`
 
    Now, if you go to the following URL (http://localhost:4444/wd/hub/static/resource/hub.html) in your browser, you will actually see the Web driver manager running in the background.
