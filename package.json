@@ -1,0 +1,19 @@
+{
+  "name": "protractor-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conf.js",
+  "dependencies": {
+    "fs-extra": "^6.0.1",
+    "jasmine-reporters": "^2.3.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor-html-reporter-2": "^1.0.4",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Osanda Nimalarathna",
+  "license": "ISC"
+}
