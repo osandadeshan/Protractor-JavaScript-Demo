@@ -3,6 +3,7 @@
 
 ## What is Protractor?
 Protractor plays an important role in the Testing of AngularJS applications and works as a Solution integrator combining powerful technologies like Selenium, Jasmine, Web driver, etc. 
+
 It is intended not only to test AngularJS application but also for writing automated regression tests for normal Web Applications as well.
 <br />
 
@@ -15,6 +16,7 @@ Protractor is a NodeJS program which is written in JavaScript and runs with Node
 
 ## Why can't we find Angular JS web elements using normal Selenium web driver?
 Angular JS applications have some extra HTML attributes like ng-repeater, ng-controller, ng-model.., etc. which are not included in Selenium locators. Selenium is not able to identify those web elements using Selenium code. So, Protractor on the top of Selenium can handle and controls those attributes in Web Applications.
+
 The protractor is an end to end testing framework for Angular JS based applications. While most frameworks focus on conducting unit tests for Angular JS applications, Protractor focuses on testing the actual functionality of an application.
 <br />
 
@@ -30,6 +32,7 @@ Step 3) Update the Web driver manager. The web driver manager is used for runnin
 `webdriver-manager update`
 
 Step 4) Start the web driver manager. This step will run the web driver manager in the background and will listen to any tests which run via protractor.
+
 Once Protractor is used to run any test, the web driver will automatically load and run the test in the relevant browser. To start the web driver manager, the following command needs to be executed from the command prompt.
 `webdriver-manager start`
 
