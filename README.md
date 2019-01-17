@@ -1,5 +1,5 @@
 # Protractor Demo
-<br /> <br />
+<br />
 
 ## What is Protractor?
 Protractor plays an important role in the Testing of AngularJS applications and works as a Solution integrator combining powerful technologies like Selenium, Jasmine, Web driver, etc. 
