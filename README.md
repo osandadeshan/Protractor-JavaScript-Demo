@@ -2,11 +2,12 @@
 <br /> <br />
 
 ## What is Protractor?
-Protractor plays an important role in the Testing of AngularJS applications and works as a Solution integrator combining powerful technologies like Selenium, Jasmine, Web driver, etc. It is intended not only to test AngularJS application but also for writing automated regression tests for normal Web Applications as well.
+Protractor plays an important role in the Testing of AngularJS applications and works as a Solution integrator combining powerful technologies like Selenium, Jasmine, Web driver, etc. 
+It is intended not only to test AngularJS application but also for writing automated regression tests for normal Web Applications as well.
 <br />
 
 ## Why do we need Protractor framework?
-JavaScript is used in almost all web applications. As the applications grow, JavaScript also increases in size and complexity. In such case, it becomes a difficult task for Testers to test the web application for various scenarios.
+JavaScript is used in almost all web applications. As the applications grow, JavaScript also increases in size and complexity. In such case, it becomes a difficult task for Testers to test the web application for various scenarios.\
 Sometimes it is difficult to capture the web elements in AngularJS applications using JUnit or Selenium WebDriver.
 Protractor is a NodeJS program which is written in JavaScript and runs with Node to identify the web elements in AngularJS applications, and it also uses WebDriver to control the browser with user actions.
 <br />
