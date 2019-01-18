@@ -1,4 +1,4 @@
-# Protractor Demo
+# Protractor JavaScript Demo
 
 <br />
 
