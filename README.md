@@ -29,7 +29,7 @@ The protractor is an end to end testing framework for Angular JS based applicati
 
 ## Protractor installation
 
-(Steps 3 and 4 are Optional but recommended for better practice)
+(Steps 3 and 4 are Optional but recommended for better practice).
 
    1. Open command prompt and type `npm install –g protractor` and hit Enter.
       The above command will download the necessary files and install Protractor on the client system.
