@@ -34,7 +34,7 @@ The protractor is an end to end testing framework for Angular JS based applicati
    1. Open command prompt and type `npm install –g protractor` and hit Enter.
       The above command will download the necessary files and install Protractor on the client system.
 
-   2. Check the installation and version using `Protractor --version`. If successful it will show the version.
+   2. Check the installation and version using `protractor --version`. If successful it will show the version.
 
    3. Update the Web driver manager. The web driver manager is used for running the tests against the angular web application in a specific browser. After Protractor is installed, the web driver manager needs to be updated to the latest version. This can be done by running the following command in the command prompt.\
       `webdriver-manager update`
