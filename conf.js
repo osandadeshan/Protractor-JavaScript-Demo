@@ -1,10 +1,11 @@
 var { SpecReporter } = require('jasmine-spec-reporter');
 var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
 var jasmineReporters = require('jasmine-reporters');
-
 var reportsDirectory = './reports';
 var dashboardReportDirectory = reportsDirectory + '/dashboardReport';
 var detailsReportDirectory = reportsDirectory + '/detailReport';
+
+const BASE_URL = "http://newtours.demoaut.com";
 
 var ScreenshotAndStackReporter = new HtmlScreenshotReporter({
   dest: detailsReportDirectory,
@@ -15,9 +16,18 @@ var ScreenshotAndStackReporter = new HtmlScreenshotReporter({
   captureOnlyFailedSpecs: true,
 });
 
+
 exports.config = {
   directConnect: true,
-  specs: ['spec.js'],
+  baseUrl: BASE_URL,
+  specs: ["spec/*.js"],
+  capabilities: {
+    browserName: "chrome"
+  },
+
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 60000
+},
 
   beforeLaunch: function () {
     return new Promise(function (resolve) {
@@ -26,6 +36,7 @@ exports.config = {
   },
 
   onPrepare: function () {
+    browser.waitForAngularEnabled(false);
     // xml report generated for dashboard
     jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
       consolidateAll: true,
@@ -113,4 +124,5 @@ exports.config = {
       ScreenshotAndStackReporter.afterLaunch(resolve.bind(this, exitCode));
     });
   },
+  
 };

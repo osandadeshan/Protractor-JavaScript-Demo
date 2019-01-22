@@ -189,10 +189,10 @@ th {
         <div class="navbar-header">
           <div class="project-name visible-md visible-lg">Protractor Test Execution Report</div>
           <div class="label-container">
-            <span class="label label-success" title=TestCases>Passed: 1</span>
-            
+            <span class="label label-success" title=TestCases>Passed: 2</span>
+            <span class="label label-danger" title=TestCases>Failed: 1</span> 
 			
-            <span class="label label-info">Time Elapsed: 0h 0min 5s</span>
+            <span class="label label-info">Time Elapsed: 0h 1min 16s</span>
           </div>
         </div>
       </div>
@@ -200,11 +200,11 @@ th {
 
     <div class="container">
 	
-    <div class="generated-on">1/17/2019, 2:06:42 PM</div>
+    <div class="generated-on">1/22/2019, 1:02:03 PM</div>
 	
     <!--<div class="generated-on"><b>Platform:</b> Windows NT</div>
     <div class="info"><b>Browser:</b> chrome 71.0.3578.98</div>
-    <div class="info"><b>Generated on:</b> 1/17/2019, 2:06:42 PM</div>-->
+    <div class="info"><b>Generated on:</b> 1/22/2019, 1:02:03 PM</div>-->
 
 
       <div class="row">
@@ -246,12 +246,13 @@ th {
       <h4 class="panel-title">
           <a data-toggle="collapse" href="#collapseSuite0">
           
-            <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
           
-          <font color="green"><b>TestSuite:</b>Enter GURU99 Name</font>
+          <font color="red"><b>TestSuite:</b>'Login to the application' form</font>
+          
           <span class="label-container">
-            <span class="label label-success">1</span>
-            
+            <span class="label label-success">2</span>
+            <span class="label label-danger">1</span>
             
             
           </span>
@@ -269,7 +270,7 @@ th {
                           <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>should add a Name as GURU99</font>
+                        <font color="green"><b>TestCase:</b>Submit without username and password inputs</font>
                         
                         
                         <span class="label-container">
@@ -285,11 +286,94 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 5 seconds</font>
+                          <font color="black">Time elapsed: 9 seconds</font>
 
                           
 
                           
+                      
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#collapseTestCase0_1">
+                        
+                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                        
+
+                        <font color="green"><b>TestCase:</b>Submit with only valid username</font>
+                        
+                        
+                        <span class="label-container">
+                          <span class="label label-success" title="Passed">Passed</span>
+                          
+                          
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="collapseTestCase0_1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p class="scenario-container">
+                        
+                          <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
+                          <font color="black">Time elapsed: 4 seconds</font>
+
+                          
+
+                          
+                      
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#collapseTestCase0_2">
+                        
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                        
+
+                        
+                        
+                        <font color="red"><b>TestCase:</b>Submit valid username and valid password</font>
+                        <span class="label-container">
+                          
+                          
+                          <span class="label label-danger" title="Failed">Failed</span>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="collapseTestCase0_2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p class="scenario-container">
+                        
+                          <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
+                          <font color="black">Time elapsed: 64 seconds</font>
+
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.</font>
+                          
+
+                          
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href=".//chrome-'Login to the application' form Submit valid username and valid password.png" data-lightbox="chrome-'Login to the application' form Submit valid username and valid password.png">
+                              <img src=".//chrome-'Login to the application' form Submit valid username and valid password.png" style="width:100%;height:100%" alt="Screenshot not found: .//chrome-'Login to the application' form Submit valid username and valid password.png"/>
+                            </a>
+                        
                       
                       </p>
                     </div>
@@ -331,16 +415,16 @@ th {
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(function() {drawChart({
                                                               "title": "TestSuites",
-                                                              "passed": 1,
-                                                              "failed": 0,
+                                                              "passed": 0,
+                                                              "failed": 1,
         })
       });
       google.charts.setOnLoadCallback(function() {drawChart({
                                                               "title": "TestCases",
-                                                              "passed": 1,
+                                                              "passed": 2,
                                                               "skipped": 0,
                                                               "errors": 0,
-                                                              "failed": 0
+                                                              "failed": 1
         })
       });
 
