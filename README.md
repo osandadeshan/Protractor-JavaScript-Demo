@@ -70,6 +70,6 @@ Protractor-JavaScript-Demo/
 
    1. Clone this project
    2. Run `npm install` to download required dependencies
-   3. Run `protractor conf.js` to run the sample tests which used protractor-helper class
-   4. Run `protractor async_await_conf.js` to run the sample tests which used async/await keywords
+   3. Run `protractor conf.js` to run the sample tests which used **protractor-helper** class
+   4. Run `protractor async_await_conf.js` to run the sample tests which used **async/await** keywords
    5. Reports will be created in *./reports* folder
