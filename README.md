@@ -47,9 +47,29 @@ The protractor is an end to end testing framework for Angular JS based applicati
 
 <br />
 
+## File organization
+```
+Protractor-JavaScript-Demo/
+|- node_modules/                                // downloaded node modules
+|- page/using_async_await/LoginPagePo.js        // page object example by using async/await keywords
+|- page/using_helper_class/LoginPagePo.js       // page object example by using protractor-helper class
+|- reports/                                     // generated reports for the test execution
+|- spec/using_async_await/LoginPageSpec.js      // spec for the page objects example by using async/await keywords
+|- spec/using_helper_class/LoginPageSpec.js     // spec for the page objects example by using protractor-helper class
+|- .gitignore                                   // excluded the downloaded node modules in the repo
+|- async_await_conf.js                          // configuration for the page objects example used async/await keywords
+|- conf.js                                      // configuration for the page objects example used protractor-helper class
+|- LICENSE                                      // GPL-3.0
+|- package.json                                 // node dependencies for the project
+|- package-lock.json                            // describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
+|- README.md                                    // this file
+```
+<br />
+
 ## How to run this project?
 
    1. Clone this project
    2. Run `npm install` to download required dependencies
-   3. Run `protractor conf.js` to run the sample tests
-   4. Reports will be created in *./reports* folder
+   3. Run `protractor conf.js` to run the sample tests by using protractor-helper class
+   4. Run `protractor async_await_conf.js` to run the sample tests by using async/await keywords
+   5. Reports will be created in *./reports* folder
