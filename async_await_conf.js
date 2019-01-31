@@ -20,11 +20,11 @@ var ScreenshotAndStackReporter = new HtmlScreenshotReporter({
 exports.config = {
   directConnect: true,
   baseUrl: BASE_URL,
-  specs: ["spec/using_helper_class/*.js"],
+  specs: ["spec/using_async_await/LoginPageSpec.js"],
   capabilities: {
     browserName: "chrome"
   },
-  SELENIUM_PROMISE_MANAGER: true,     //Set this true if you are using Helper class in page objects, Set this false if you are using async/await in page objects.
+  SELENIUM_PROMISE_MANAGER: false,     //Set this true if you are using Helper class in page objects, Set this false if you are using async/await in page objects.
   jasmineNodeOpts: {
     defaultTimeoutInterval: 60000
 },

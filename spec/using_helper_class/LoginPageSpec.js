@@ -1,7 +1,7 @@
 "use strict";
 
 const Helper = require("protractor-helper");
-const LoginPage = require("../page/LoginPagePo.js");
+const LoginPage = require("../../page/using_helper_class/LoginPagePo.js");
 
 
 describe("'Login to the application' form", () => {

@@ -22,5 +22,8 @@
     "protractor-helper": "latest",
     "protractor-html-reporter-2": "^1.0.4",
     "protractor-jasmine2-screenshot-reporter": "^0.5.0"
+  },
+  "devDependencies": {
+    "jasmine-protractor-matchers": "^2.0.0"
   }
 }
