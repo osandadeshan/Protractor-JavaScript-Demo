@@ -16,9 +16,9 @@ class LoginPage {
   }
 
   login(userName, password) {
-    Helper.fillFieldWithTextWhenVisible(this.userNameInput, userName);
-    Helper.fillFieldWithTextWhenVisible(this.passwordInput, password);
-    Helper.clickWhenClickable(this.signInButton);
+    Helper.fillFieldWithText(this.userNameInput, userName);
+    Helper.fillFieldWithText(this.passwordInput, password);
+    Helper.click(this.signInButton);
   }
 
   
