@@ -26,7 +26,7 @@ exports.config = {
   },
   SELENIUM_PROMISE_MANAGER: true,     //Set this true if you are using Helper class in page objects, Set this false if you are using async/await in page objects.
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 60000
+    defaultTimeoutInterval: 90000
 },
 
   beforeLaunch: function () {
