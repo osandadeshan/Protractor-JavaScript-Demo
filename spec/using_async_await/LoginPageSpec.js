@@ -2,7 +2,6 @@
 
 const guruLoginPage = require('../../page/using_async_await/LoginPagePo.js');
 
-const HOME_PAGE_TITLE = "Guru99 Bank Manager HomePage";
 const LOGIN_PAGE_TITLE = "Guru99 Bank Home Page"; 
 const userId = "mngr176318";
 const password = "vumejAn";
@@ -19,6 +18,7 @@ describe('Login to the application', function () {
         var alertDialog = await browser.switchTo().alert();
         expect(alertDialog.getText()).toEqual("User or Password is not valid");
         await browser.switchTo().alert().accept();
+        await expect(guruLoginPage.getLoginPageTitle()).toEqual(LOGIN_PAGE_TITLE);
     });
 
     it("Login with only valid username", async function () {
@@ -26,9 +26,12 @@ describe('Login to the application', function () {
         await expect(guruLoginPage.getLoginPageTitle()).toEqual(LOGIN_PAGE_TITLE);
     });
 
-    it('Submit valid username and valid password', async function () {
+    it('Submit valid username and expired password', async function () {
         await guruLoginPage.login(userId, password);
-        await expect(guruLoginPage.getLoginPageTitle()).toEqual(HOME_PAGE_TITLE);
+        var alertDialog = await browser.switchTo().alert();
+        expect(alertDialog.getText()).toEqual("User or Password is not valid");
+        await browser.switchTo().alert().accept();
+        await expect(guruLoginPage.getLoginPageTitle()).toEqual(LOGIN_PAGE_TITLE);
     });
 
 
