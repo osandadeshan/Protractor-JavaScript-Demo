@@ -17,7 +17,7 @@ describe("'Login to the application' form", () => {
   });
 
   it("Submit without username and password inputs", () => {
-    Helper.clickWhenClickable(LoginPage.signInButton);
+    Helper.click(LoginPage.signInButton);
     Helper.waitForElementVisibility(LoginPage.userNameInput);
     Helper.waitForElementVisibility(LoginPage.passwordInput);
     Helper.waitForElementVisibility(LoginPage.signInButton);
