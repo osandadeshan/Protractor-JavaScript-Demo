@@ -21,6 +21,10 @@ class LoginPage {
     Helper.click(this.signInButton);
   }
 
+  getPageTitle() {
+    return browser.getTitle();
+  }
+
   
 }
 
