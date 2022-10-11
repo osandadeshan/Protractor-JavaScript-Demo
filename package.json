@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "fs-extra": "^7.0.1",
-    "jasmine-reporters": "^2.3.2",
+    "jasmine-reporters": "^2.5.0",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "latest",
     "protractor-helper": "latest",
